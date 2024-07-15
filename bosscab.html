@@ -440,7 +440,7 @@
               overlooked. I gathered 8 participants and utilised Maze, a rapid
               prototyping tool, and discovered a few usability issues within
               the prototype. I then brainstormed solutions and made several
-              adjustments to directly address user’s feedback.
+              adjustments to directly address user's feedback.
             </span>
             <br />
             <span></span>
@@ -518,7 +518,15 @@
           <img src="public/playground_assets/svgviewer-png-output%20blac-200h.png"
             class="footer-white-transparent-image" />
         </a>
-        <span class="footer-white-transparent-text"><span>© 2022</span></span>
+        <span class="footer-white-transparent-text"><span id="currentYear">© 2024</span></span>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var currentYearElement = document.getElementById("currentYear");
+            var currentYear = new Date().getFullYear();
+            currentYearElement.textContent = "© " + currentYear;
+          })
+        </script>
       </div>
     </div>
   </div>

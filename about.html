@@ -260,8 +260,16 @@
               class="footerwith-social-icon-transparent-image" />
           </a>
           <span class="footerwith-social-icon-transparent-text">
-            <span>© 2022</span>
+            <span id="currentYear">© 2024</span>
           </span>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var currentYearElement = document.getElementById("currentYear");
+              var currentYear = new Date().getFullYear();
+              currentYearElement.textContent = "© " + currentYear;
+            })
+          </script>
         </div>
       </div>
     </div>

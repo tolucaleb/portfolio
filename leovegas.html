@@ -181,7 +181,7 @@
               <span></span>
               <br />
               <span>
-                ​As much as &quot;patience is a great virtue&quot;, people are
+                As much as &quot;patience is a great virtue&quot;, people are
                 still in a hurry. And when a product sign up flow don&apos;t
                 meet up with their pace they get bored 😴 🥱
               </span>
@@ -201,7 +201,7 @@
               <span>
                 1. The LeoVegas website looks good, the sign up process is
                 cool too but I find it difficult signing in first, because I
-                didn’t see a prompt call-to-action button instructing me to
+                didn't see a prompt call-to-action button instructing me to
                 sign in as a visitor, instead I saw PLAY.
               </span>
               <br />
@@ -494,8 +494,16 @@
               class="footer-with-social-icons-black-image" />
           </a>
           <span class="footer-with-social-icons-black-text">
-            <span>© 2022</span>
+            <span id="currentYear">© 2024</span>
           </span>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var currentYearElement = document.getElementById("currentYear");
+              var currentYear = new Date().getFullYear();
+              currentYearElement.textContent = "© " + currentYear;
+            })
+          </script>
         </div>
       </div>
     </div>
