@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   overflow: auto;
-  min-height: 100vh;
+  min-height: 80vh;
   align-items: center;
   flex-direction: column;
   background: linear-gradient(to bottom, #092140, #ffffff);
@@ -27,24 +27,29 @@
   margin-bottom: 0px;
   text-decoration: none;
 }
+
 .header-black-navlink1 {
   color: #ffffff;
   margin-left: 0;
   text-decoration: none;
 }
+
 .header-black-navlink2 {
   display: contents;
 }
+
 .header-black-image {
   width: var(--dl-size-size-small);
   object-fit: cover;
   text-decoration: none;
 }
+
 .header-black-navlink3 {
   color: #ffffff;
   margin-right: 0;
   text-decoration: none;
 }
+
 .header-black-navlink4 {
   color: #ffffff;
   margin-right: 0;
@@ -75,11 +80,12 @@
   width: 100%;
   display: flex;
   margin-right: var(--dl-space-space-threeunits);
+  margin-left: var(--dl-space-space-threeunits);
   flex-direction: column;
 }
 .home-text {
   color: #ffffff;
-  font-size: 1vw;
+  font-size: 20px;
   font-style: normal;
   margin-top: var(--dl-space-space-halfunit);
   font-family: Poppins;
@@ -89,13 +95,13 @@
 }
 .home-text03 {
   color: #ffffff;
-  font-size: 4.5vw;
+  font-size: 62px;
   margin-bottom: var(--dl-space-space-twounits);
   font-family: Roboto;
 }
 .home-text04 {
   color: #ffffff;
-  font-size: 1.2vw;
+  font-size: 16px;
   font-style: normal;
   margin-top: var(--dl-space-space-unit);
   font-family: Inter;
@@ -103,69 +109,213 @@
 }
 
 .home-image {
-    height: 100%;
-    width: 100%;
-    max-width: 920px;
-    object-fit: contain;
+  height: 100%;
+  width: 100%;
+  max-width: 920px;
+  object-fit: contain;
 }
 
 .home-list {
-    width: 100%;
-    margin: 1em 0px 1em 0px;
-    display: block;
-    padding: 0px 0px 0px 1.5rem;
+  width: 100%;
+  margin: 0.5em 0px 0.5em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
 }
 
 .home-list-item {
-    display: list-item;
-    color: #ffffff;
-    font-size: 1.2vw;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: 1.15;
-    margin-bottom: 2px;
-    text-transform: none;
-    text-decoration: none; 
+  display: list-item;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 2px;
+  text-transform: none;
+  text-decoration: none;
 }
 
 .para-wrapper {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .para-subtitle {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 14px;
-    font-style: normal;
-    text-align: left;
-    font-weight: 400;
-    margin-bottom: var(--dl-space-space-halfunit);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: var(--dl-space-space-halfunit);
 }
 
 .para-title {
-    color: #000000;
-    font-size: 24px;
-    font-style: normal;
-    text-align: left;
-    font-weight: 800;
-    margin-bottom: var(--dl-space-space-halfunit);
+  color: #000000;
+  font-size: 24px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 800;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+
+.para-title-centered {
+  color: #000000;
+  font-size: 24px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 800;
+  margin-top: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-unit);
 }
 
 .para-text {
-    color: rgba(0, 0, 0, 0.75);
-    font-style: normal;
-    text-align: left;
-    font-family: Poppins;
-    font-weight: 400;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-halfunit);
+  color: rgba(0, 0, 0, 0.75);
+  font-style: normal;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+
+section {
+  margin-bottom: var(--dl-space-space-threeunits);
+  margin-top: var(--dl-space-space-threeunits);
+}
+
+.section-variant-2 {
+  background-color: #edeff2;
+  padding: var(--dl-space-space-fourunits) 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.section-variant-3 {
+  padding: var(--dl-space-space-threeunits) 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: #092140;
+}
+
+.section-variant-3 .para-wrapper {
+  display: flex;
+}
+
+.section-variant-3 .para-title,
+.section-variant-3 .para-text,
+.section-variant-3 .para-subtitle {
+  color: #ffffff;
+}
+
+.para-left-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: var(--dl-space-space-twounits);
+}
+
+.para-image-wrapper {
+  flex: 1;
+}
+
+.para-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.para-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.social-icons-social-icons {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: 300px;
+  align-items: center;
+  justify-content: space-around;
+}
+.social-icons-link {
+  display: contents;
+}
+.social-icons-icon {
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+}
+.social-icons-link1 {
+  display: contents;
+}
+.social-icons-icon02 {
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+}
+.social-icons-link2 {
+  display: contents;
+}
+.social-icons-icon06 {
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+}
+.social-icons-link3 {
+  display: contents;
+}
+.social-icons-icon08 {
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--dl-space-space-threeunits);
+}
+
+.footer-white-transparent-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: flex-end;
+}
+.footer-white-transparent-navlink {
+  display: contents;
+}
+.footer-white-transparent-image {
+  width: var(--dl-size-size-small);
+  object-fit: cover;
+  text-decoration: none;
+}
+.footer-white-transparent-text {
+  color: var(--dl-color-gray-black);
+  font-size: 12px;
+  margin-top: var(--dl-space-space-unit);
+  letter-spacing: 0.2rem;
+}
+
+.tx-align-center {
+  text-align: center;
 }
 
 @media (max-width: 1300px) {
-    .home-image {
-        max-width: 720px;
-    }
+  .home-image {
+    max-width: 720px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -230,1169 +380,3 @@
     object-fit: contain;
   }
 }
-
-/* .social-iconswhite-social-icons {
-    width: 100%;
-    display: flex;
-    padding: var(--dl-space-space-threeunits);
-    position: relative;
-    max-width: 300px;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .social-iconswhite-link {
-    display: contents;
-  }
-  .social-iconswhite-icon {
-    width: 24px;
-    height: 24px;
-    text-decoration: none;
-  }
-  .social-iconswhite-link1 {
-    display: contents;
-  }
-  .social-iconswhite-icon02 {
-    width: 24px;
-    height: 24px;
-    text-decoration: none;
-  }
-  .social-iconswhite-link2 {
-    display: contents;
-  }
-  .social-iconswhite-icon06 {
-    width: 24px;
-    height: 24px;
-    text-decoration: none;
-  }
-  .social-iconswhite-link3 {
-    display: contents;
-  }
-  .social-iconswhite-icon08 {
-    width: 24px;
-    height: 24px;
-    text-decoration: none;
-  }
-  
-  @media (max-width: 767px) {
-    .social-iconswhite-social-icons {
-      padding-left: var(--dl-space-space-twounits);
-      padding-right: var(--dl-space-space-twounits);
-    }
-  }
-  @media (max-width: 479px) {
-    .social-iconswhite-social-icons {
-      padding-top: var(--dl-space-space-twounits);
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-      padding-bottom: var(--dl-space-space-twounits);
-    }
-  }
-  
-  .footer-with-social-icon-light-green-container {
-    width: 100%;
-    display: flex;
-    position: relative;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .footer-with-social-icon-light-green-container1 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    position: relative;
-    align-items: center;
-    padding-top: var(--dl-space-space-twounits);
-    flex-direction: column;
-    padding-bottom: var(--dl-space-space-twounits);
-    justify-content: flex-end;
-    background-color: #0e484d;
-  }
-  .footer-with-social-icon-light-green-navlink {
-    display: contents;
-  }
-  .footer-with-social-icon-light-green-image {
-    width: var(--dl-size-size-small);
-    object-fit: cover;
-    text-decoration: none;
-  }
-  .footer-with-social-icon-light-green-text {
-    color: #ffffff;
-    font-size: 12px;
-    margin-top: var(--dl-space-space-unit);
-    letter-spacing: 0.2rem;
-  }
-  
-  .pay2ship-app-container {
-    width: 100%;
-    display: flex;
-    overflow: auto;
-    min-height: 100vh;
-    align-items: center;
-    flex-direction: column;
-  }
-  .pay2ship-app-main-section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    padding: var(--dl-space-space-threeunits);
-    min-height: 500px;
-    align-items: center;
-    flex-direction: column;
-    background-size: cover;
-    justify-content: center;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgb(14, 72, 77) 95%
-      ),
-      url("../public/playground_assets/pay2ship_hero.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .pay2ship-app-text {
-    color: var(--dl-color-gray-white);
-    font-size: 6rem;
-    max-width: 900px;
-    margin-top: var(--dl-space-space-halfunit);
-    text-align: center;
-    text-shadow: -0.5px -0.5px 0 #999, 0.5px -0.5px 0 #999, -0.5px 0.5px 0 #999,
-      0.5px 0.5px 0 #999;
-    margin-bottom: var(--dl-space-space-halfunit);
-    outline-color: var(--dl-color-gray-black);
-    outline-width: var(--dl-size-size-xsmall);
-    letter-spacing: 20px;
-  }
-  .pay2ship-app-text02 {
-    color: var(--dl-color-gray-white);
-    font-size: 3rem;
-    max-width: 900px;
-    font-style: normal;
-    margin-top: 0px;
-    text-align: center;
-    font-weight: 100;
-    text-shadow: -0.5px -0.5px 0 #999, 0.5px -0.5px 0 #999, -0.5px 0.5px 0 #999,
-      0.5px 0.5px 0 #999;
-    margin-bottom: var(--dl-space-space-twounits);
-    outline-color: var(--dl-color-gray-black);
-    outline-width: var(--dl-size-size-xsmall);
-  }
-  .pay2ship-app-container01 {
-    top: 0;
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    padding-top: var(--dl-space-space-twounits);
-    padding-bottom: var(--dl-space-space-twounits);
-    justify-content: space-around;
-    max-width: 450px;
-  }
-  .pay2ship-app-navlink {
-    color: #ffffff;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-decoration: none;
-  }
-  .pay2ship-app-navlink1 {
-    color: #ffffff;
-    margin-left: 0;
-    text-decoration: none;
-  }
-  .pay2ship-app-navlink2 {
-    display: contents;
-  }
-  .pay2ship-app-image {
-    width: var(--dl-size-size-small);
-    object-fit: cover;
-    text-decoration: none;
-  }
-  .pay2ship-app-navlink3 {
-    color: #ffffff;
-    margin-right: 0;
-    text-decoration: none;
-  }
-  .pay2ship-app-text03 {
-    color: #ffffff;
-    margin-right: 0;
-  }
-  .pay2ship-app-project-overview {
-    width: 100%;
-    display: flex;
-    padding: var(--dl-space-space-twounits);
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .pay2ship-app-container02 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-twounits);
-    flex-direction: column;
-  }
-  .pay2ship-app-container03 {
-    display: flex;
-    padding-right: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-image01 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-text04 {
-    color: rgba(0, 0, 0, 0.75);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-  }
-  .pay2ship-app-persona {
-    width: 100%;
-    display: flex;
-    padding: var(--dl-space-space-twounits);
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .pay2ship-app-container04 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-twounits);
-    flex-direction: column;
-  }
-  .pay2ship-app-container05 {
-    display: flex;
-    padding-right: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-image02 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-text06 {
-    color: rgba(0, 0, 0, 0.75);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-  }
-  .pay2ship-app-image03 {
-    width: 100%;
-    object-fit: cover;
-  }
-  .pay2ship-app-user-flow {
-    width: 100%;
-    display: flex;
-    padding: var(--dl-space-space-twounits);
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .pay2ship-app-container06 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-twounits);
-    flex-direction: column;
-  }
-  .pay2ship-app-container07 {
-    display: flex;
-    padding-right: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-image04 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-text07 {
-    color: rgba(0, 0, 0, 0.75);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-  }
-  .pay2ship-app-image05 {
-    width: 100%;
-    object-fit: cover;
-  }
-  .pay2ship-app-design-process {
-    width: 100%;
-    display: flex;
-    padding: var(--dl-space-space-twounits);
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .pay2ship-app-container08 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-twounits);
-    flex-direction: column;
-  }
-  .pay2ship-app-container09 {
-    display: flex;
-    padding-right: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-image06 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-image07 {
-    width: 100%;
-    margin-top: var(--dl-space-space-unit);
-    object-fit: contain;
-  }
-  .pay2ship-app-user-flow1 {
-    width: 100%;
-    display: flex;
-    padding: var(--dl-space-space-twounits);
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .pay2ship-app-container10 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-twounits);
-    flex-direction: column;
-  }
-  .pay2ship-app-container11 {
-    display: flex;
-    padding-right: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-image08 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-text08 {
-    color: rgba(0, 0, 0, 0.75);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-  }
-  .pay2ship-app-typography {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .pay2ship-app-container12 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    padding: var(--dl-space-space-fourunits);
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: flex-start;
-  }
-  .pay2ship-app-image09 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-visual-designs {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-top: var(--dl-space-space-sixunits);
-    flex-direction: column;
-    padding-bottom: var(--dl-space-space-sixunits);
-    background-color: #0e484d;
-  }
-  .pay2ship-app-container13 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    min-height: 100px;
-    align-items: flex-start;
-  }
-  .pay2ship-app-container14 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-twounits);
-    margin-bottom: 0px;
-    flex-direction: column;
-  }
-  .pay2ship-app-heading {
-    color: var(--dl-color-gray-white);
-    font-size: 3rem;
-    text-align: center;
-  }
-  .pay2ship-app-splash-screen {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #0e484d;
-  }
-  .pay2ship-app-container15 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    min-height: 100px;
-    align-items: flex-start;
-  }
-  .pay2ship-app-container16 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-text11 {
-    color: var(--dl-color-gray-white);
-    font-size: 3rem;
-  }
-  .pay2ship-app-container17 {
-    display: flex;
-    flex-direction: column;
-  }
-  .pay2ship-app-text13 {
-    color: var(--dl-color-gray-white);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
-  .pay2ship-app-container18 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: flex-start;
-  }
-  .pay2ship-app-image10 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-login-and-signup-screens {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #0e484d;
-  }
-  .pay2ship-app-container19 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    min-height: 100px;
-    align-items: flex-start;
-  }
-  .pay2ship-app-container20 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-text14 {
-    color: var(--dl-color-gray-white);
-    font-size: 3rem;
-  }
-  .pay2ship-app-container21 {
-    display: flex;
-    flex-direction: column;
-  }
-  .pay2ship-app-text16 {
-    color: var(--dl-color-gray-white);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
-  .pay2ship-app-container22 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: flex-start;
-  }
-  .pay2ship-app-image11 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-home-screen {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #0e484d;
-  }
-  .pay2ship-app-container23 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    min-height: 100px;
-    align-items: flex-start;
-  }
-  .pay2ship-app-container24 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-text17 {
-    color: var(--dl-color-gray-white);
-    font-size: 3rem;
-  }
-  .pay2ship-app-container25 {
-    display: flex;
-    flex-direction: column;
-  }
-  .pay2ship-app-text19 {
-    color: var(--dl-color-gray-white);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
-  .pay2ship-app-container26 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: flex-start;
-  }
-  .pay2ship-app-image12 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-container27 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    min-height: 100px;
-    align-items: flex-start;
-  }
-  .pay2ship-app-container28 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-container29 {
-    display: flex;
-    flex-direction: column;
-  }
-  .pay2ship-app-text21 {
-    color: var(--dl-color-gray-white);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
-  .pay2ship-app-container30 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: flex-start;
-  }
-  .pay2ship-app-image13 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-destination-details {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #0e484d;
-  }
-  .pay2ship-app-container31 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    min-height: 100px;
-    align-items: flex-start;
-  }
-  .pay2ship-app-container32 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-text22 {
-    color: var(--dl-color-gray-white);
-    font-size: 3rem;
-  }
-  .pay2ship-app-container33 {
-    display: flex;
-    flex-direction: column;
-  }
-  .pay2ship-app-text24 {
-    color: var(--dl-color-gray-white);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
-  .pay2ship-app-container34 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: flex-start;
-  }
-  .pay2ship-app-image14 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-bookings-and-payment {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #0e484d;
-  }
-  .pay2ship-app-container35 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    min-height: 100px;
-    align-items: flex-start;
-  }
-  .pay2ship-app-container36 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-text25 {
-    color: var(--dl-color-gray-white);
-    font-size: 3rem;
-  }
-  .pay2ship-app-container37 {
-    display: flex;
-    flex-direction: column;
-  }
-  .pay2ship-app-text26 {
-    color: var(--dl-color-gray-white);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
-  .pay2ship-app-container38 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: flex-start;
-  }
-  .pay2ship-app-image15 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-trip-details {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #0e484d;
-  }
-  .pay2ship-app-container39 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    min-height: 100px;
-    align-items: flex-start;
-  }
-  .pay2ship-app-container40 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-text28 {
-    color: var(--dl-color-gray-white);
-    font-size: 3rem;
-  }
-  .pay2ship-app-container41 {
-    display: flex;
-    flex-direction: column;
-  }
-  .pay2ship-app-text29 {
-    color: var(--dl-color-gray-white);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
-  .pay2ship-app-container42 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: flex-start;
-  }
-  .pay2ship-app-image16 {
-    width: 100%;
-    object-fit: contain;
-  }
-  .pay2ship-app-travel-buddies {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #0e484d;
-  }
-  .pay2ship-app-container43 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    min-height: 100px;
-    align-items: flex-start;
-  }
-  .pay2ship-app-container44 {
-    width: 100%;
-    display: flex;
-    margin-left: var(--dl-space-space-threeunits);
-    flex-direction: column;
-  }
-  .pay2ship-app-text31 {
-    color: var(--dl-color-gray-white);
-    font-size: 3rem;
-  }
-  .pay2ship-app-container45 {
-    display: flex;
-    flex-direction: column;
-  }
-  .pay2ship-app-text32 {
-    color: var(--dl-color-gray-white);
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    text-align: left;
-    font-family: Inter;
-    line-height: 25px;
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
-  .pay2ship-app-container46 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    max-width: var(--dl-size-size-maxwidth);
-    align-items: flex-start;
-  }
-  .pay2ship-app-image17 {
-    width: 100%;
-    object-fit: contain;
-  }
-  @media (max-width: 991px) {
-    .pay2ship-app-project-overview {
-      padding: var(--dl-space-space-threeunits);
-      flex-direction: column;
-    }
-    .pay2ship-app-container02 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container03 {
-      padding-left: var(--dl-space-space-threeunits);
-    }
-    .pay2ship-app-text04 {
-      text-align: left;
-    }
-    .pay2ship-app-persona {
-      padding: var(--dl-space-space-threeunits);
-      flex-direction: column;
-    }
-    .pay2ship-app-container04 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container05 {
-      padding-left: var(--dl-space-space-threeunits);
-    }
-    .pay2ship-app-text06 {
-      text-align: left;
-    }
-    .pay2ship-app-user-flow {
-      padding: var(--dl-space-space-threeunits);
-      flex-direction: column;
-    }
-    .pay2ship-app-container06 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container07 {
-      padding-left: var(--dl-space-space-threeunits);
-    }
-    .pay2ship-app-text07 {
-      text-align: left;
-    }
-    .pay2ship-app-design-process {
-      padding: var(--dl-space-space-threeunits);
-      flex-direction: column;
-    }
-    .pay2ship-app-container08 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container09 {
-      padding-left: var(--dl-space-space-threeunits);
-    }
-    .pay2ship-app-user-flow1 {
-      padding: var(--dl-space-space-threeunits);
-      flex-direction: column;
-    }
-    .pay2ship-app-container10 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container11 {
-      padding-left: var(--dl-space-space-threeunits);
-    }
-    .pay2ship-app-text08 {
-      text-align: left;
-    }
-    .pay2ship-app-container14 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-heading {
-      text-align: center;
-    }
-    .pay2ship-app-container16 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-text11 {
-      text-align: center;
-    }
-    .pay2ship-app-text13 {
-      text-align: left;
-      padding-left: var(--dl-space-space-fourunits);
-    }
-    .pay2ship-app-container20 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-text14 {
-      text-align: center;
-    }
-    .pay2ship-app-text16 {
-      text-align: left;
-      padding-left: var(--dl-space-space-fourunits);
-    }
-    .pay2ship-app-container24 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-text17 {
-      text-align: center;
-    }
-    .pay2ship-app-text19 {
-      text-align: left;
-      padding-left: var(--dl-space-space-fourunits);
-    }
-    .pay2ship-app-container28 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-text21 {
-      text-align: left;
-      padding-left: var(--dl-space-space-fourunits);
-    }
-    .pay2ship-app-container32 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-text22 {
-      text-align: center;
-    }
-    .pay2ship-app-text24 {
-      text-align: left;
-      padding-left: var(--dl-space-space-fourunits);
-    }
-    .pay2ship-app-container36 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-text25 {
-      text-align: center;
-    }
-    .pay2ship-app-text26 {
-      text-align: left;
-      padding-left: var(--dl-space-space-fourunits);
-    }
-    .pay2ship-app-container40 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-text28 {
-      text-align: center;
-    }
-    .pay2ship-app-text29 {
-      text-align: left;
-      padding-left: var(--dl-space-space-fourunits);
-    }
-    .pay2ship-app-container44 {
-      align-items: center;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-text31 {
-      text-align: center;
-    }
-    .pay2ship-app-text32 {
-      text-align: left;
-      padding-left: var(--dl-space-space-fourunits);
-    }
-  }
-  @media (max-width: 767px) {
-    .pay2ship-app-main-section {
-      padding-left: var(--dl-space-space-twounits);
-      padding-right: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-project-overview {
-      padding-left: var(--dl-space-space-twounits);
-      padding-right: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-persona {
-      padding-left: var(--dl-space-space-twounits);
-      padding-right: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-user-flow {
-      padding-left: var(--dl-space-space-twounits);
-      padding-right: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-design-process {
-      padding-left: var(--dl-space-space-twounits);
-      padding-right: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-user-flow1 {
-      padding-left: var(--dl-space-space-twounits);
-      padding-right: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-heading {
-      font-size: 2rem;
-    }
-    .pay2ship-app-text11 {
-      font-size: 2rem;
-    }
-    .pay2ship-app-text14 {
-      font-size: 2rem;
-    }
-    .pay2ship-app-text17 {
-      font-size: 2rem;
-    }
-    .pay2ship-app-text22 {
-      font-size: 2rem;
-    }
-    .pay2ship-app-text25 {
-      font-size: 2rem;
-    }
-    .pay2ship-app-text28 {
-      font-size: 2rem;
-    }
-    .pay2ship-app-text31 {
-      font-size: 2rem;
-    }
-  }
-  @media (max-width: 479px) {
-    .pay2ship-app-main-section {
-      padding-top: var(--dl-space-space-twounits);
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-      padding-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-project-overview {
-      padding-top: var(--dl-space-space-twounits);
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-      padding-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container02 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container03 {
-      padding-left: var(--dl-space-space-halfunit);
-      padding-right: var(--dl-space-space-halfunit);
-    }
-    .pay2ship-app-persona {
-      padding-top: var(--dl-space-space-twounits);
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-      padding-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container04 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container05 {
-      padding-left: var(--dl-space-space-halfunit);
-      padding-right: var(--dl-space-space-halfunit);
-    }
-    .pay2ship-app-user-flow {
-      padding-top: var(--dl-space-space-twounits);
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-      padding-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container06 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container07 {
-      padding-left: var(--dl-space-space-halfunit);
-      padding-right: var(--dl-space-space-halfunit);
-    }
-    .pay2ship-app-design-process {
-      padding-top: var(--dl-space-space-twounits);
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-      padding-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container08 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container09 {
-      padding-left: var(--dl-space-space-halfunit);
-      padding-right: var(--dl-space-space-halfunit);
-    }
-    .pay2ship-app-user-flow1 {
-      padding-top: var(--dl-space-space-twounits);
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-      padding-bottom: var(--dl-space-space-twounits);
-    }
-    .pay2ship-app-container10 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container11 {
-      padding-left: var(--dl-space-space-halfunit);
-      padding-right: var(--dl-space-space-halfunit);
-    }
-  
-    .pay2ship-app-container12 {
-      padding-left: var(--dl-space-space-oneandhalfunits);
-      padding-right: var(--dl-space-space-oneandhalfunits);
-    }
-  
-    .pay2ship-app-container14 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container16 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-text13 {
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container20 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-text16 {
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container24 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-text19 {
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container28 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-text21 {
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container32 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-text24 {
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container36 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-text26 {
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container40 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-text29 {
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-container44 {
-      margin-bottom: var(--dl-space-space-unit);
-    }
-    .pay2ship-app-text32 {
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-    }
-  }
-   */
